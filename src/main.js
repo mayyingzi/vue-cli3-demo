@@ -5,7 +5,7 @@ import router from './router'
 import store from './store'
 import './registerServiceWorker'
 
-if (process.env.NODE_ENV !== 'production') {
+if (0 && process.env.NODE_ENV !== 'production') {
     const eruda = require('eruda')
 
     eruda.init()

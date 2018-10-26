@@ -11,6 +11,7 @@ module.exports = {
         "indent": [2, 4, {
             "SwitchCase": 1
         }],
+        "no-tabs": 0,
         "camelcase": "off",
         'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
         'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off'

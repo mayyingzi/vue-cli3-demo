@@ -13,6 +13,7 @@
         "lib-flexible": "^0.3.2",
         "postcss-pxtorem": "^4.0.1",
         "register-service-worker": "^1.0.0",
+        "vant": "^1.3.9",
         "vue": "^2.5.17",
         "vue-router": "^3.0.1",
         "vuex": "^3.0.1"
@@ -25,6 +26,7 @@
         "@vue/cli-service": "^3.0.1",
         "@vue/eslint-config-standard": "^3.0.3",
         "@vue/test-utils": "^1.0.0-beta.20",
+        "babel-plugin-import": "^1.10.0",
         "chai": "^4.1.2",
         "px2rem-webpack-plugin": "^0.2.3",
         "stylus": "^0.54.5",
