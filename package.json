@@ -4,11 +4,14 @@
     "private": true,
     "scripts": {
         "serve": "vue-cli-service serve",
+        "serve:alpha": "vue-cli-service serve --mode alpha",
         "build": "vue-cli-service build --report",
+        "build:alpha": "vue-cli-service build --report --mode alpha",
         "lint": "vue-cli-service lint",
         "test:unit": "vue-cli-service test:unit"
     },
     "dependencies": {
+        "axios": "^0.18.0",
         "eruda": "^1.5.4",
         "lib-flexible": "^0.3.2",
         "postcss-pxtorem": "^4.0.1",
