@@ -28,7 +28,7 @@ export default {
             this.curTit = '更新的tit'
             this.addParams = '今安徽的机会'
             this.$nextTick(() => {
-                console.log(this.$el)
+                // console.log(this.$el)
             })
         }, 5000)
 

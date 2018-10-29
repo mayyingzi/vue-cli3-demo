@@ -2,6 +2,27 @@
 	<div class="aboutView">
 		<p @click="showList">this is about</p>
         <van-button type="warning">主要按钮</van-button>
+        <van-button @click="changeUser">修改用户信息</van-button>
+        <van-cell-group>
+            <van-field
+                required
+                clearable
+                label="用户名"
+                icon="question"
+                v-model="name"
+                @click-icon="$toast(nameTips)"
+                placeholder="请输入用户名" />
+        </van-cell-group>
+        <van-cell-group>
+            <van-field
+                required
+                clearable
+                label="年龄"
+                icon="question"
+                v-model="age"
+                @click-icon="$toast(ageTips)"
+                placeholder="请输入年龄" />
+        </van-cell-group>
         <!-- FIXME:动态加载组建  -->
 		<div :is="barShow" :msg="msg"></div>
         <p v-for="item in urlType" :key="item" @click="changeUrl(item)">{{item}}</p>
@@ -21,7 +42,9 @@
 </template>
 
 <script>
-import { List, Cell, Button, SwipeCell, CellGroup, Dialog } from 'vant'
+import { List, Cell, Button, SwipeCell, CellGroup, Dialog, Field } from 'vant'
+import { USERINFO_ADD_MUTATION } from '../store/mutationTypes.js'
+import { USERINFO_UPDATE_ACTION } from '../store/actionTypes.js'
 // import 'vant/lib/vant-css/index.css'
 
 export default {
@@ -29,6 +52,10 @@ export default {
     curCell: null,
     data () {
         return {
+            name: 'zhu',
+            nameTips: '当前用户名称，提示信息的文案很长，长长长长长长长长长长',
+            age: 90,
+            ageTips: '用户实际年龄',
             barShow: null,
             msg: 'about use list bar',
             urlType: ['wait', 'finished', 'receive'],
@@ -45,19 +72,26 @@ export default {
             ]
         }
     },
+    computed: {
+    },
     components: {
         listBar: () => import('./../components/listBar.vue'),
         [List.name]: List,
         [Cell.name]: Cell,
         [Button.name]: Button,
         [SwipeCell.name]: SwipeCell,
-        [CellGroup.name]: CellGroup
-    },
-    mounted () {
-        // console.log('挂载ok，完成渲染about')
+        [CellGroup.name]: CellGroup,
+        [Field.name]: Field
     },
     created () {
         // console.log('初始化实例')
+    },
+    mounted () {
+        // console.log('挂载ok，完成渲染about')
+        this.$store.commit(USERINFO_ADD_MUTATION, {
+            name: this.name,
+            age: this.age
+        })
     },
     methods: {
         showList () {
@@ -107,6 +141,12 @@ export default {
         },
         onDelete (ind) {
             this.curCell = ind
+        },
+        changeUser () {
+            this.$store.dispatch(USERINFO_UPDATE_ACTION, {
+                name: this.name,
+                age: this.age
+            })
         }
     }
 }

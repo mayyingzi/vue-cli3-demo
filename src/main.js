@@ -4,7 +4,9 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 import './registerServiceWorker'
+import { Toast } from 'vant'
 
+Vue.use(Toast)
 if (0 && process.env.NODE_ENV !== 'production') {
     const eruda = require('eruda')
 
