@@ -34,6 +34,11 @@ module.exports = {
     // }
     // 对象配置
     configureWebpack: {
+        resolve: {
+            alias: {
+                // 'vue-ios-pickers': 'vue-ios-pickers/src/index.js'
+            }
+        },
         plugins: [
             new MyAwesomeWebpackPlugin()
             // new Px2remWebpackPlugin({originScreenWidth: 750, maxWidth: 750}),
@@ -46,7 +51,7 @@ module.exports = {
                             warnings: false,
                             drop_console: true, // console
                             drop_debugger: false,
-                            pure_funcs: ['console.log']// 移除console
+                            pure_funcs: ['console.log'] // 移除console
                         }
                     }
                 })

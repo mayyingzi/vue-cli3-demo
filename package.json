@@ -18,6 +18,7 @@
         "register-service-worker": "^1.0.0",
         "vant": "^1.3.9",
         "vue": "^2.5.17",
+        "vue-ios-pickers": "^1.4.6",
         "vue-router": "^3.0.1",
         "vuex": "^3.0.1"
     },
@@ -31,6 +32,8 @@
         "@vue/test-utils": "^1.0.0-beta.20",
         "babel-plugin-import": "^1.10.0",
         "chai": "^4.1.2",
+        "less": "^3.8.1",
+        "less-loader": "^4.1.0",
         "px2rem-webpack-plugin": "^0.2.3",
         "stylus": "^0.54.5",
         "stylus-loader": "^3.0.2",
