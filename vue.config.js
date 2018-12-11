@@ -19,7 +19,7 @@ const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
 module.exports = {
     baseUrl: (process.env.NODE_ENV === 'production' ? '/vue-cli3-demo/' : '/'), // 部署包时的基本url， 也可以根据环境判断设置 process.env.NODE_ENV === 'production'? '/production-sub-path/' : '/'
     outputDir: 'docs', // 当运行vue -cli-service build 时生成的生产换进构建文件的目录， 默认 dist
-    assetsDir: 'static', // 防止生成的静态资源（js、css、img、fonts）的（相对于outputDir）目录
+    // assetsDir: 'static', // 防止生成的静态资源（js、css、img、fonts）的（相对于outputDir）目录
     indexPath: 'index.html', // 指定生成的index.html的输出路径（相对于outputDir）。也是一个绝对路径，默认：index.html
     productionSourceMap: false, // 是否在生产环境下使用source map，默认： true
     // 函数配置
