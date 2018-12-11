@@ -12,7 +12,7 @@ self.__precacheManifest = [
     "url": "/vue-cli3-demo/css/chunk-63d4e558.16f6e288.css"
   },
   {
-    "revision": "b359c38a9df959012246",
+    "revision": "86ec552191a3f01cda13",
     "url": "/vue-cli3-demo/css/app.9e2c8f1e.css"
   },
   {
@@ -40,8 +40,8 @@ self.__precacheManifest = [
     "url": "/vue-cli3-demo/js/about.757a07ba.js"
   },
   {
-    "revision": "b359c38a9df959012246",
-    "url": "/vue-cli3-demo/js/app.7476f163.js"
+    "revision": "86ec552191a3f01cda13",
+    "url": "/vue-cli3-demo/js/app.751d8c05.js"
   },
   {
     "revision": "a860ecbd97a6987f8360",
@@ -68,7 +68,7 @@ self.__precacheManifest = [
     "url": "/vue-cli3-demo/img/logo.82b9c7a5.png"
   },
   {
-    "revision": "61fa3f677c46d3194dc64ca6236b4db1",
+    "revision": "f9f580b53f9cf0da025868bd8b0f125d",
     "url": "/vue-cli3-demo/index.html"
   },
   {
