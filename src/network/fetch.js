@@ -15,8 +15,8 @@ axios.interceptors.request.use()
 // 收到响应之后的拦截器
 axios.interceptors.response.use()
 
-function axiosInit (config) {
+function fetch (config) {
     return axios(config)
 }
 
-export default axiosInit
+export default fetch
