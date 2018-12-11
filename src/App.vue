@@ -19,7 +19,7 @@
     padding 30px
     a
         font-weight bold
-        color #2c3e50
+        color #ff4d6a
         &.router-link-exact-active
             color #42b983
 </style>
